@@ -137,7 +137,7 @@ i {
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
+  font-family: "Rethink Sans", sans-serif;
   font-size: 16px;
   height: 48px;
   justify-content: center;
@@ -262,7 +262,7 @@ i {
 
 .marquee span {
     color: gray;
-    font-family: "Neue Montreal";
+    font-family: "Rethink Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     mix-blend-mode: normal !important;
