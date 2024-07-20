@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // ease: 'power3.inOut',
         scrollTrigger: {
             trigger: ".dashboard",
-            start: "900vh top",
+            start: "1070vh top",
             end: "1200vh top",
             scrub: 1,
         }
