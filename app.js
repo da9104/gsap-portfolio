@@ -120,17 +120,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-    gsap.to("#window img", {
-        opacity: 0,
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".dashboard",
-            start: "20vh top",
-            end: "450vh top",
-            scrub: 0.5,
-        }
-    })
-
     gsap.to("#landing-img0", {
         filter: "blur(10px)",
         y: '-100px',
@@ -156,12 +145,116 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+    // gsap.timeline()
+    //     .to(".dami", {
+    //     // opacity: 1,
+    //     x: '-60px',
+    //     duration: 1,
+    //     rotation: "-1deg",
+    //     delay: 2.1,
+    //   })
+
+    gsap.set('.middle-about', {
+        y: '30vh'
+    })
+
+    gsap.set(".dami", {
+        opacity: 0,
+        x: '160px',
+    })
+
+    gsap.set(".middle-about h3", {
+        opacity: 0,
+        filter: "blur(10px)",
+        x: '-160px',
+    })
+
+    gsap.set(".middle-about p", {
+        opacity: 0,
+        filter: "blur(10px)",
+        x: '-160px',
+    })
+
+    gsap.set(".middle-snsIcons", {
+        opacity: 0,
+        // filter: "blur(10px)",
+        y: '30px',
+    })
+
+
+    gsap.to(".dami", {
+            opacity: 1,
+            x: '-60px',
+            duration: 1,
+            rotation: "-1deg",
+            delay: 2.1,
+            filter: 'none',
+            scrollTrigger: {
+                trigger: ".dashboard",
+                start: "680vh top",
+                end: "700vh top",
+                scrub: 1,
+            }
+      })
+
+      gsap.to(".middle-about h3", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        filter: 'none',
+        scrollTrigger: {
+            trigger: ".dashboard",
+            start: "680vh top",
+            end: "700vh top",
+            scrub: 1,
+        }
+  })
+      gsap.to(".middle-about p", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: 'power3.inOut',
+        filter: 'none',
+        scrollTrigger: {
+            trigger: ".dashboard",
+            start: "680vh top",
+            end: "700vh top",
+            scrub: 1,
+        }
+  })
+
+    gsap.to('.middle-snsIcons', 1, {
+        y: '0',
+        opacity: 1,
+        ease: 'power3.inOut',
+        delay: 0.9,
+        scrollTrigger: {
+            trigger: ".dashboard",
+            start: "680vh top",
+            end: "700vh top",
+            scrub: 1,
+        }
+    })
+
+    gsap.to(".middle-about", 2, {
+        // opacity: 0,
+        filter: "blur(10px)",
+        duration: 1,
+        // ease: 'power3.inOut',
+        scrollTrigger: {
+            trigger: ".dashboard",
+            start: "900vh top",
+            end: "1200vh top",
+            scrub: 1,
+        }
+  })
+
     gsap.from('.marquee', 2, {
         // top: '100vh',
         ease: 'power3.inOut',
         delay: 0.9,
     })
-    
+  
     gsap.to(".marquee", {
         opacity: 0,
         filter: "blur(10px)",
@@ -210,5 +303,18 @@ document.addEventListener("DOMContentLoaded", function() {
             scrub: true,
         }
     })
+
+    gsap.to("#window", {
+        transformOrigin: "center 95.2",
+        scale: 150,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".features",
+            start: "70vh top",
+            end: "750vh top",
+            scrub: 1,
+        }
+    })
+
 
 })

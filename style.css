@@ -18,8 +18,13 @@ body {
     font-family: "Rethink Sans", sans-serif;
     font-style: normal;
     font-optical-sizing: auto;
-    background: white;
-  
+    /* background:  rgb(220, 198, 238) 100%; */
+    /* background: linear-gradient(
+        180deg,
+        rgb(255, 255, 255, 1) 0%,
+        rgba(255,255,255,1) 0%,
+        rgb(220, 198, 238) 100%
+    ); */
 }
 
 img {
@@ -107,6 +112,10 @@ i {
 .container {
     width: 100%;
     height: 100%;
+}
+
+.dashboard {
+    background: white;
 }
 
 .dashboard h2 {
@@ -238,6 +247,97 @@ i {
     bottom: -70vh
 }
 
+.middle span{
+    position: absolute;
+    font-weight: 100;
+    font-size: 10px;
+    right: 5px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.middle span::before{
+    content: '';
+    /* height: 100%; */
+    border: 1px solid black;
+    width: 300px;
+    margin: 0 10px 0px 0;
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+
+.dami {
+    position: absolute;
+    bottom: -30rem;
+    right: 15rem;
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+}
+
+.middle-about {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.middle-about h3 {
+    position: absolute;
+    bottom: -20rem;
+    right: 25rem;
+    width: 300px;
+}
+
+.middle-about p {
+    position: absolute;
+    bottom: -30rem;
+    right: 25rem;
+    width: 300px;
+}
+
+.middle-snsIcons {
+    position: absolute;
+    bottom: -33rem;
+    right: 25rem;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5px;
+}
+
+
+
+.arrow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 100%;
+    background: transparent;
+    top: -1.4em;
+    right: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: black;
+    font-family: "Dahlia", Arial, sans-serif;
+    transform: rotate(-45deg);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #96b8d7;
+    color: white;
+  }
+
+
+
 
 .whitespace {
     width: 100%;
@@ -338,6 +438,15 @@ h1 span {
 
 }
 
+#window {
+    text-align: center;
+}
+
+.window-bg {
+    background: rgb(220, 198, 238) 100%;
+}
+
+
 @media(max-width:900px) {
     .dock {
         width: 75%;
@@ -355,7 +464,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 10rem;
-    background: white;
+    background:    rgb(220, 198, 238) 100%;
 }
 
 footer ul {
